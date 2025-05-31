@@ -89,15 +89,17 @@ $user_languages = $stmt->fetchAll();
             <div class="bg-white rounded-xl shadow-md overflow-hidden mb-8">
                 <div class="p-6">
                     <div class="flex flex-col md:flex-row items-start md:items-center gap-6">
-                        <?php if ($user['profile_picture']): ?>
+                        <?php if (!empty($user['profile_picture'])): ?>
                             <img src="../<?php echo htmlspecialchars($user['profile_picture']); ?>" 
-                                 alt="Photo de profil" 
-                                 class="profile-picture h-32 w-32 rounded-full object-cover border-4 border-blue-100 shadow-sm">
+                                alt="Photo de profil" 
+                                class="profile-picture h-32 w-32 rounded-full object-cover border-4 border-blue-100 shadow-sm">
                         <?php else: ?>
                             <div class="profile-picture h-32 w-32 rounded-full bg-blue-100 flex items-center justify-center border-4 border-blue-200 shadow-sm">
                                 <i class="fas fa-user text-blue-400 text-4xl"></i>
                             </div>
                         <?php endif; ?>
+                    </div>
+
                         
                         <div class="flex-1">
                             <h1 class="text-3xl font-bold text-gray-800 mb-1">
