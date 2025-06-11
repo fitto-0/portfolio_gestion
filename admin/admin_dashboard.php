@@ -9,7 +9,7 @@ $nb_langages = $pdo->query("SELECT COUNT(*) FROM technologies")->fetchColumn();
 $nb_screenshots = $pdo->query("SELECT COUNT(*) FROM screenshots")->fetchColumn();
 
 // Include navbar and sidebar
-include '../navbar.php';
+
 include 'sidebar_admin.php';
 ?>
 
@@ -63,7 +63,7 @@ include 'sidebar_admin.php';
                 <i class="fas fa-users text-blue-600"></i>
               </div>
             </div>
-            <a href="manage_students.php" class="mt-3 inline-block text-blue-600 text-sm hover:underline">Gérer les étudiants</a>
+            <a href="./manage_students.php" class="mt-3 inline-block text-blue-600 text-sm hover:underline">Gérer les étudiants</a>
           </div>
 
           <!-- Projets -->

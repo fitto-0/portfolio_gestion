@@ -9,7 +9,7 @@ $role = $_SESSION['role'] ?? null;
 <nav class="bg-gray-900 shadow-lg sticky top-0 z-50">
   <div class="container mx-auto flex items-center justify-between py-3 px-4 md:px-6">
     <div class="flex items-center space-x-1 md:space-x-6">
-      <a href="index.php" class="flex items-center space-x-1">
+      <a href="../index.php" class="flex items-center space-x-1">
         <span class="text-white text-xl font-bold tracking-wide hover:text-blue-400 transition duration-300">Accueil</span>
       </a>
       

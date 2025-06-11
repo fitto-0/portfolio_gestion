@@ -1,8 +1,8 @@
 <?php
 // admin_view_portfolio.php
 include '../pdo.php';
-include '../navbar.php';
-include 'sidebar_admin.php';
+
+
 $user_id = $_GET['id'] ?? null;
 if (!$user_id) {
     echo '<div class="text-red-600">Utilisateur non spécifié.</div>';
